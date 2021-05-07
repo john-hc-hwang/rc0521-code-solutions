@@ -11,10 +11,7 @@ body {
 .row {
   display: flex;
   padding: 6px 0;
-}
-
-.column-100 {
-  width: 100%;
+  justify-content: center;
 }
 
 .column-third {
@@ -30,7 +27,6 @@ body {
   padding: 18px;
 }
 
-h2,
 h3,
 p {
   color: white;
@@ -38,6 +34,7 @@ p {
 }
 
 h2 {
+  color: white;
   font-size: 30px;
   font-weight: 300;
 }
