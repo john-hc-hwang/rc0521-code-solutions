@@ -10,6 +10,11 @@ body {
 .row {
   display: flex;
   margin: 10px;
+  justify-content: center;
+}
+
+.img-container {
+  width: 90%;
 }
 
 .text-center {
@@ -50,5 +55,4 @@ button {
   letter-spacing: 0.1rem;
   padding: 12px 30px;
   margin-top: 25px;
-  margin-left: 386px;
 }
