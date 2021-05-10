@@ -27,7 +27,7 @@ console.log('value of fullName:', fullName);
 console.log('typeof fullName:', typeof fullName);
 
 var pH = 6;
-var isAcidic = pH < 6;
+var isAcidic = pH < 7;
 console.log('value of isAcidic:', isAcidic);
 console.log('typeof isAcidic:', typeof isAcidic);
 
