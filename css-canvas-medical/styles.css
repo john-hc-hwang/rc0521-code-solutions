@@ -49,6 +49,7 @@ img {
   position: relative;
   left: 156px;
   top: 10px;
+  text-decoration: none;
 }
 
 .navigation-contact {
@@ -57,12 +58,14 @@ img {
   position: relative;
   left: 156px;
   top: 10px;
+  text-decoration: none;
   background-color: #294464;
   border-radius: 5px;
   color: white;
 }
 
 .navigation:hover {
+  text-decoration: none;
   background-color: #294464;
   border-radius: 5px;
   color: white;
@@ -91,6 +94,7 @@ hr {
   width: 780px;
   font-weight: 550;
   font-size: 24px;
+  line-height: 2.5rem;
 }
 
 .start-button {
@@ -146,6 +150,7 @@ section.footer {
 .footer-navigation {
   font-size: 24px;
   display: block;
+  text-decoration: none;
 }
 
 .footer-move {
