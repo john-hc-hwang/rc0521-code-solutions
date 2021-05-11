@@ -51,48 +51,14 @@ p {
   bottom: 20px;
 }
 
-.img-container3 {
-  width: 450px;
-  position: relative;
-  bottom: 20px;
-}
-
-.img-container5 {
-  width: 450px;
-  position: relative;
-  bottom: 20px;
-}
-
-.img-container7 {
-  width: 450px;
-  position: relative;
-  bottom: 20px;
-}
-
 .img-container2 {
   width: 120px;
-  margin-left: 166px;
   position: relative;
-  bottom: 36px;
+  right: 10px;
+  bottom: 26px;
 }
 
-.img-container4 {
-  width: 120px;
-  margin-left: 166px;
-  position: relative;
-  bottom: 36px;
-}
-
-.img-container6 {
-  width: 120px;
-  margin-left: 166px;
-  position: relative;
-  bottom: 36px;
-}
-
-.img-container8 {
-  width: 120px;
-  margin-left: 166px;
-  position: relative;
-  bottom: 36px;
+.image-center {
+  display: flex;
+  justify-content: center;
 }
