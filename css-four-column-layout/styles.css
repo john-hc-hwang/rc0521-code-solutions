@@ -1,0 +1,98 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+section.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #f7f8fa;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  position: relative;
+  bottom: 50px;
+  right: 12px;
+}
+
+p {
+  color: #4f4f50;
+  font-size: 20px;
+  margin-right: 14px;
+  position: relative;
+  bottom: 50px;
+}
+
+.column-25 {
+  width: 25%;
+}
+
+.img-container1 {
+  width: 450px;
+  position: relative;
+  bottom: 20px;
+}
+
+.img-container3 {
+  width: 450px;
+  position: relative;
+  bottom: 20px;
+}
+
+.img-container5 {
+  width: 450px;
+  position: relative;
+  bottom: 20px;
+}
+
+.img-container7 {
+  width: 450px;
+  position: relative;
+  bottom: 20px;
+}
+
+.img-container2 {
+  width: 120px;
+  margin-left: 166px;
+  position: relative;
+  bottom: 36px;
+}
+
+.img-container4 {
+  width: 120px;
+  margin-left: 166px;
+  position: relative;
+  bottom: 36px;
+}
+
+.img-container6 {
+  width: 120px;
+  margin-left: 166px;
+  position: relative;
+  bottom: 36px;
+}
+
+.img-container8 {
+  width: 120px;
+  margin-left: 166px;
+  position: relative;
+  bottom: 36px;
+}
