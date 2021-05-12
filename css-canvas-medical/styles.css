@@ -118,14 +118,20 @@ section.locations {
 .section-paragraph {
   width: 630px;
   font-size: 20px;
+  line-height: 2rem;
 }
 
 .section-font {
   font-size: 25px;
 }
 
+.margin-left {
+  margin-left: 64px;
+}
+
 .section-end {
   margin-left: 64px;
+  margin-bottom: 60px;
 }
 
 .button-end {
