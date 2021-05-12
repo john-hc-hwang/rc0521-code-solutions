@@ -39,6 +39,11 @@ span.size {
   font-weight: 400;
 }
 
+.highlight {
+  background-color: #f5e9de;
+  display: inline;
+}
+
 del.sale {
   color: #e1e1e1;
   font-weight: 400;
