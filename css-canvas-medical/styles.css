@@ -49,6 +49,7 @@ img {
   position: relative;
   left: 156px;
   top: 10px;
+  text-decoration: none;
 }
 
 .navigation-contact {
@@ -60,6 +61,7 @@ img {
   background-color: #294464;
   border-radius: 5px;
   color: white;
+  text-decoration: none;
 }
 
 .navigation:hover {
@@ -146,6 +148,7 @@ section.footer {
 .footer-navigation {
   font-size: 24px;
   display: block;
+  text-decoration: none;
 }
 
 .footer-move {
