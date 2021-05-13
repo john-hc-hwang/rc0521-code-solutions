@@ -6,15 +6,8 @@ function includesSeven(array) {
   }
   for (var i = 0; i < array.length; i++) {
     if (array[i] === 7) {
-      var isTrue = true;
-    } else {
-      var isFalse = false;
+      return true;
     }
   }
-
-  if (isTrue) {
-    return isTrue;
-  } else {
-    return isFalse;
-  }
+  return false;
 }
