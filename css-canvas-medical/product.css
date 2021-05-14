@@ -73,6 +73,7 @@ img {
   position: relative;
   left: 156px;
   top: 10px;
+  text-decoration: none;
 }
 
 .navigation-contact {
