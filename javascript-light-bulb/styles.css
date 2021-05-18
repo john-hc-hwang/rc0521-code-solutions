@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bulb-container.on {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb-container.off {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.bulb {
+  border: 1px solid black;
+  border-style: none;
+  height: 300px;
+  width: 300px;
+  background-color: #faea84;
+  border-radius: 50%;
+}
+
+.bulb.off {
+  border: 1px solid black;
+  border-style: none;
+  height: 300px;
+  width: 300px;
+  background-color: #252525;
+  border-radius: 50%;
+  box-shadow: 0 -20px 5px black;
+}
