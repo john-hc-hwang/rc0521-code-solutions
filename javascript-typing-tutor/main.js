@@ -1,20 +1,20 @@
-var $span = document.querySelectorAll('span');
 var $body = document.querySelector('body');
+var $span = document.querySelectorAll('span');
 var $results = document.querySelector('.results.none');
 var $again = document.querySelector('.again.none');
 
 var count = 0;
 var errorCount = 0;
 function keydown(event) {
-  if (count <= $span.length - 1) {
-    if ($span[count].textContent === event.key || ($span[count].innerText === event.key)) {
+  if (count < $span.length) {
+    if ($span[count].innerText === event.key) {
       $span[count].className = 'correct';
       if (count !== $span.length - 1) {
         $span[count + 1].className = 'underline';
       }
       count++;
     } else {
-      $span[count].className = 'incorrect underline red';
+      $span[count].className = 'incorrect red';
       errorCount++;
     }
   }
@@ -25,7 +25,7 @@ function keydown(event) {
   }
 }
 
-function play(event) {
+function reset(event) {
   count = 0;
   errorCount = 0;
   for (var i = 0; i < $span.length; i++) {
@@ -36,4 +36,4 @@ function play(event) {
 }
 
 $body.addEventListener('keydown', keydown);
-$again.addEventListener('click', play);
+$again.addEventListener('click', reset);

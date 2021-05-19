@@ -19,7 +19,7 @@ body {
   border-bottom: solid black;
 }
 
-.underline.red {
+.red {
   border-bottom: solid #f80606;
 }
 
@@ -31,17 +31,13 @@ body {
   color: #f80606;
 }
 
-.results.none {
+.none {
   display: none;
 }
 
 .results {
   font-size: 40px;
   font-weight: 500;
-}
-
-.again.none {
-  display: none;
 }
 
 .again {
