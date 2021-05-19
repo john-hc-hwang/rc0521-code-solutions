@@ -26,7 +26,13 @@ function keydown(event) {
 }
 
 function play(event) {
-  location.reload();
+  count = 0;
+  errorCount = 0;
+  for (var i = 0; i < $span.length; i++) {
+    $span[i].removeAttribute('class');
+  }
+  $results.className = 'results none';
+  $again.className = 'again none';
 }
 
 $body.addEventListener('keydown', keydown);
