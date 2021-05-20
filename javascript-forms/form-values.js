@@ -1,4 +1,6 @@
 var $form = document.querySelector('#contact-form');
+// var $form = document.forms[0];
+// above code is same as line 1.
 
 var messageData = {};
 $form.addEventListener('submit', function (event) {
