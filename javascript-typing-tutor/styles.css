@@ -6,6 +6,26 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 48px;
+}
+
+#typehere {
+  padding: 10px 10px;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+.goButton {
+  padding: 8px 8px;
+  font-size: 20px;
+  background-color: #fec5bb;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .type {
   display: flex;
   flex-direction: column;
