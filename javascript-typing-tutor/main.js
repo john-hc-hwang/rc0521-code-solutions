@@ -37,7 +37,6 @@ function keydown(event) {
 function reset(event) {
   var $span = document.querySelectorAll('span');
   for (var i = 0; i < $span.length; i++) {
-    $span[i].removeAttribute('class');
     $span[i].remove();
   }
   $input.value = '';
