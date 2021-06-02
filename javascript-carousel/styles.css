@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fas.fa-chevron-circle-left {
+  font-size: 5rem;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+.fas.fa-chevron-circle-right {
+  font-size: 5rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.fas.fa-circle {
+  font-size: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.far.fa-circle {
+  font-size: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
