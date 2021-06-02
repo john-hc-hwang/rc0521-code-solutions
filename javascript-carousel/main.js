@@ -29,19 +29,19 @@ var images = [
   }
 ];
 
-var index = 1;
+var index = 0;
 
-function changeImage() {
+function changeImageRight() {
+  index++;
+  if (index === 5) {
+    index = 0;
+  }
   $carousel.setAttribute('src', images[index].src);
   $carousel.setAttribute('alt', images[index].alt);
   for (var circles of $allCircle) {
     circles.classList.replace('fas', 'far');
   }
   $allCircle[index].classList.replace('far', 'fas');
-  index++;
-  if (index === 5) {
-    index = 0;
-  }
 }
 
 function changeImageLeft() {
@@ -57,27 +57,36 @@ function changeImageLeft() {
   $allCircle[index].classList.replace('far', 'fas');
 }
 
-// var intervalId = setInterval(changeImage, 2000);
+function selectImage() {
+  $carousel.setAttribute('src', images[index].src);
+  $carousel.setAttribute('alt', images[index].alt);
+  for (var circles of $allCircle) {
+    circles.classList.replace('fas', 'far');
+  }
+  $allCircle[index].classList.replace('far', 'fas');
+}
+
+var intervalId = setInterval(changeImageRight, 2000);
 
 for (var circles of $allCircle) {
   circles.addEventListener('click', function (event) {
-    // clearInterval(intervalId);
+    clearInterval(intervalId);
     var circleId = event.target.id;
     var id = circleId.slice(event.target.id.length - 1);
     index = id - 1;
-    changeImage();
-    // intervalId = setInterval(changeImage, 2000);
+    selectImage();
+    intervalId = setInterval(changeImageRight, 2000);
   });
 }
 
 $rightArrow.addEventListener('click', function (event) {
-  // clearInterval(intervalId);
-  changeImage();
-  // intervalId = setInterval(changeImage, 2000);
+  clearInterval(intervalId);
+  changeImageRight();
+  intervalId = setInterval(changeImageRight, 2000);
 });
 
 $leftArrow.addEventListener('click', function (event) {
-  // clearInterval(intervalId);
+  clearInterval(intervalId);
   changeImageLeft();
-  // intervalId = setInterval(changeImage, 2000);
+  intervalId = setInterval(changeImageRight, 2000);
 });

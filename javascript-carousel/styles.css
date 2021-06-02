@@ -34,16 +34,12 @@ body {
 
 .fas.fa-circle {
   font-size: 2rem;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
 .far.fa-circle {
   font-size: 2rem;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   cursor: pointer;
-}
-
-img {
-  width: 100%;
 }
