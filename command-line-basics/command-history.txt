@@ -1,0 +1,336 @@
+    1  git config --global --list
+    2  git config --global user.name "John Hwang"
+    3  git config --global user.email "johnhchwang@gmail.com"
+    4  git config --global --list
+    5  cd
+    6  cd repos
+    7  cd rc0521-code-solutions/
+    8  cd
+    9  cd repos
+   10  git clone https://github.com/john-hc-hwang/ajax-project.git
+   11  cd ajax-project/
+   12  npm ci
+   13  cd
+   14  cd repos
+   15  cd ajax-project/
+   16  git status
+   17  git add .
+   18  git commit -m "current work" --no-verify
+   19  git push origin issue-1-user-can-search 
+   20  git add .
+   21  git commit -m "current work"
+   22  git add .
+   23  git commit -m "current work" --no-verify
+   24  git push origin issue-1-user-can-search 
+   25  git status
+   26  git add .
+   27  git commit -m "completed issue-1"
+   28  git push origin issue-1-user-can-search 
+   29  git checkout master
+   30  git pull origin master
+   31  git branch
+   32  git branch -d issue-1-user-can-search 
+   33  git checkout -b issue-2-user-can-add
+   34  git status
+   35  git add .
+   36  git commit -m "Completed issue-2"
+   37  git status
+   38  git add .
+   39  git commit -m "Completed issue-2"
+   40  git add .
+   41  git commit -m "Completed issue-2" --no-verify
+   42  git push origin issue-2-user-can-add 
+   43  git checkout master
+   44  git pull origin master
+   45  git branch
+   46  git branch -d issue-2-user-can-add 
+   47  cd
+   48  cd repos
+   49  cd ajax-project/
+   50  git status
+   51  git add .
+   52  git commit -m "completed issue-3"
+   53  git add .
+   54  git commit -m "current work" --no-verify
+   55  git push origin issue-3-user-can-edit 
+   56  git status
+   57  git add .
+   58  git commit -m "completed issue-3"
+   59  git add .
+   60  git commit -m "completed issue-3" --no-verify
+   61  git push origin issue-3-user-can-edit 
+   62  git checkout master
+   63  git pull origin master
+   64  git branch
+   65  git branch -d issue-3-user-can-edit 
+   66  git add .
+   67  git commit -m "minor issue"
+   68  git add.
+   69  git add .
+   70  git commit -m "fixed undefined var issue"
+   71  git status
+   72  git add .
+   73  git status
+   74  git commit -m "fixed undefined var issue"
+   75  git status
+   76  git add .
+   77  git commit -m "fixed undefined variable issue"
+   78  git push origin master
+   79  git status
+   80  git add .
+   81  git status
+   82  git commit -m "added image to images folder"
+   83  git status
+   84  git add images/placeholder-image-square.jpg 
+   85  git status
+   86  git commit -m "added image to images folder"
+   87  git push origin master
+   88  cd
+   89  cd repos
+   90  cd ajax-project/
+   91  git status
+   92  git add .
+   93  git commit -m "Completed issue 4"
+   94  git push origin issue-4-user-can-add 
+   95  git checkout master
+   96  git pull origin master
+   97  git branch
+   98  git branch -d issue-4-user-can-add 
+   99  git status
+  100  git add .
+  101  git reset
+  102  git status
+  103  git checkout -b issue-5-user-can-navigate
+  104  git status
+  105  git add .
+  106  git commit -m "Completed issue 5"
+  107  git status
+  108  git add .
+  109  git commit -m "Completed issue 5"
+  110  git push origin issue-5-user-can-navigate 
+  111  git checkout master
+  112  git pull origin master
+  113  git branch
+  114  git branch -d issue-5-user-can-navigate 
+  115  cd
+  116  cd repos
+  117  cd projects/
+  118  cd
+  119  cd repos
+  120  cd projects
+  121  git clone https://github.com/chris-ys-kim/ajax-project.git
+  122  cd ajax-project/
+  123  npm ci
+  124  cd
+  125  cd repos
+  126  cd ajax-project/
+  127  git branch
+  128  git add .
+  129  git status
+  130  git commit -m "showList function added"
+  131  git status
+  132  git add .
+  133  git commit -m "showList function added"
+  134  git push origin master
+  135  git status
+  136  git add .
+  137  git commit -m "added colors to stars"
+  138  git push origin master
+  139  git status
+  140  git add .
+  141  git commit -m "star colors and hover effects added"
+  142  git push origin master
+  143  cd
+  144  cd repos
+  145  cd ajax-project/
+  146  git branch
+  147  git status
+  148  git add .
+  149  git commit -m "fixed device width and z-index"
+  150  git push origin master
+  151  cd
+  152  cd repos
+  153  cd ajax-project/
+  154  git status
+  155  git add .
+  156  git commit "changed media screen to media all"
+  157  git commit -m "changed media screen to media all"
+  158  git push origin master
+  159  git status
+  160  git add .
+  161  git commit -m "added media max-width"
+  162  git push origin master
+  163  git status
+  164  git commit -m "mediaview for iphone8 added"
+  165  git status
+  166  git add .
+  167  git commit -m "mediaview for iphone8 added"
+  168  git push origin master
+  169  git status
+  170  git add .
+  171  git commit -m "changes reverted"
+  172  git push origin master
+  173  git status
+  174  git add .
+  175  git commit -m "resizing done"
+  176  git push origin master
+  177  cd
+  178  cd repos
+  179  cd ajax-project/
+  180  git status
+  181  git add .
+  182  git commit -m "current edit work"
+  183  git push origin edit
+  184  git status
+  185  git add .
+  186  git commit -m "added page icon"
+  187  git push origin edit
+  188  git status
+  189  git add .
+  190  git commit -m "added different icon"
+  191  git push origin edit
+  192  git status
+  193  git add .
+  194  git commit -m "cannot add duplicate drinks"
+  195  git push origin edit
+  196  cd
+  197  cd repos
+  198  cd ajax-project/
+  199  git status
+  200  git add .
+  201  git commit -m "polished AJAX project"
+  202  git status
+  203  git add .
+  204  git commit -m "polished AJAX project"
+  205  git status
+  206  git add .
+  207  git commit -m "polished AJAX project"
+  208  git push origin edit
+  209  git checkout master
+  210  git pull origin master
+  211  git branch
+  212  git branch -d edit
+  213  cd
+  214  cd repos
+  215  cd rc0521-code-solutions/
+  216  git checkout -b es6-const-let
+  217  git status
+  218  git add .
+  219  git status
+  220  git commit -m "Completed es6-const-let"
+  221  git push origin es6-const-let 
+  222  git status
+  223  git add .
+  224  git commit -m "changed let to commit"
+  225  git push orgin es6-const-let 
+  226  git push origin es6-const-let 
+  227  git checkout master
+  228  git pull origin master
+  229  git branch
+  230  git branch -d es6-const-let 
+  231  git checkout -b es6-destructuring
+  232  git status
+  233  git add .
+  234  git commit -m "Completed es6-destructuring"
+  235  git push origin es6-destructuring 
+  236  git checkout master
+  237  git pull origin master
+  238  git branch
+  239  git branch -d es6-destructuring 
+  240  git checkout -b es6-template-literals
+  241  git status
+  242  git add .
+  243  git status
+  244  git commit -m "completed es6-template-literals"
+  245  git push origin es6-template-literals 
+  246  git checkout master
+  247  git pull origin master
+  248  git branch
+  249  git branch -d es6-template-literals 
+  250  git checkout -b es6-arrow-functions
+  251  git status
+  252  git add .
+  253  git commit -m "Completed es66-arrow-functions
+  254  git status
+  255  cd
+  256  cd repos
+  257  cd rc0521-code-solutions/
+  258  git status
+  259  git commit -m "completed es6-arrow-functions"
+  260  git push origin es6-arrow-functions 
+  261  git checkout master
+  262  git pull origin master
+  263  git branch
+  264  git branch -d es6-arrow-functions 
+  265  git checkout -b command-line-basics
+  266  cd command-line-basics/
+  267  pwed
+  268  pwd
+  269  man man
+  270  man cat
+  271  cat laziness.txt
+  272  man cat
+  273  cat impatience.txt
+  274  cat hubris
+  275  cat hubris.txt
+  276  cat laziness.txt laziness.txt hubris.txt
+  277  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  278  cat three-virtues.txt
+  279  man ls
+  280  ls
+  281  ls -a
+  282  ls -F
+  283  ls -aF lfz-staff > lfz-staff/contents.txt
+  284  cat lfz-staff/contents.txt
+  285  man pwd
+  286  pwd
+  287  pwd > i-was-here.txt
+  288  ls
+  289  cat i-was-here.txt
+  290  man echo
+  291  echo Hello, World!
+  292  echo 'Hello, World!' > hello.txt
+  293  cat hello.txt
+  294  man touch
+  295  touch tag-youre-it.txt
+  296  cat tag-youre-it.txt
+  297  touch snoot/boop.txt
+  298  ls
+  299  ls snoot/
+  300  man mkdir
+  301  mkdir parent
+  302  ls
+  303  man mkdir
+  304  mkdir -p parent/child/grandchild
+  305  ls
+  306  ls parent
+  307  mkdir -p parent/child/grandchild
+  308  ls parent
+  309  ls child
+  310  ls parent/child
+  311  touch parent/child/grandchild/.gitkeep
+  312  ls parent/child/grandchild
+  313  ls parent/child
+  314  ls parent/child/grandchild
+  315  ls -a
+  316  man touch
+  317  cat parent/child/grandchild/.gitkeep
+  318  git status
+  319  cd
+  320  cd repos
+  321  cd rc0521-code-solutions/
+  322  cd command-line-basics/
+  323  man mv
+  324  mv pokiemans pokemon
+  325  man rm
+  326  rm lol.txt
+  327  ls
+  328  ls -f
+  329  ls -a
+  330  man cp
+  331  cp and-then.txt no-and-then.txt
+  332  ls
+  333  cat and-then.txt
+  334  cat no-and-then.txt
+  335  man history
+  336  history > command-history.txt
