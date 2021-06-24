@@ -1,5 +1,4 @@
-const read = () => {
-  const data = require('./data.json');
+const read = data => {
   let txt = '';
   for (const [key, value] of Object.entries(data.notes)) {
     txt += `${key}: ${value}` + '\n';

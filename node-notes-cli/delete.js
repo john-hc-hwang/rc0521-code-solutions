@@ -1,8 +1,5 @@
-const remove = () => {
-  const data = require('./data.json');
-  const fs = require('fs');
+const remove = (data, fs) => {
   const Id = process.argv[3];
-
   delete data.notes[Id];
 
   const dataJSON = JSON.stringify(data, null, 2);

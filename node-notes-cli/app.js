@@ -1,3 +1,6 @@
+const data = require('./data.json');
+const fs = require('fs');
+
 const read = require('./read');
 const add = require('./add');
 const update = require('./update');
@@ -6,13 +9,13 @@ const remove = require('./delete');
 const action = process.argv[2];
 
 if (action === 'read') {
-  read();
+  read(data, fs);
 } else if (action === 'create') {
-  add();
+  add(data, fs);
 } else if (action === 'update') {
-  update();
+  update(data, fs);
 } else if (action === 'delete') {
-  remove();
+  remove(data, fs);
 } else {
   console.log('Not available operation');
 }

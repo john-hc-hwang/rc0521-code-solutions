@@ -1,6 +1,4 @@
-const add = () => {
-  const data = require('./data.json');
-  const fs = require('fs');
+const add = (data, fs) => {
   const txt = process.argv[3];
   const Id = data.nextId;
   if (txt !== undefined) {

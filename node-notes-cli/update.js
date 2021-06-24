@@ -1,6 +1,4 @@
-const update = () => {
-  const data = require('./data.json');
-  const fs = require('fs');
+const update = (data, fs) => {
   const Id = process.argv[3];
   const txt = process.argv[4];
   data.notes[Id] = txt;
