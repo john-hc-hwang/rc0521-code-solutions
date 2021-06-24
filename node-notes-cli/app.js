@@ -8,6 +8,7 @@ const remove = require('./delete');
 
 const action = process.argv[2];
 
+// depending on the action, run appropriate functions
 if (action === 'read') {
   read(data, fs);
 } else if (action === 'create') {
