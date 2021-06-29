@@ -16,10 +16,7 @@ const JSON = express.json();
 app.use(JSON);
 
 app.post('/api/grades', (req, res) => {
-  grades[index] = {};
-  for (const key in req.body) {
-    grades[index][key] = req.body[key];
-  }
+  grades[index] = req.body;
   grades[index].id = index;
 
   const currentId = index;
