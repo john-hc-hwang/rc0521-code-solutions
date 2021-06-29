@@ -26,7 +26,7 @@ app.get('/api/notes/:id', (req, res) => {
 app.use(express.json()); // for POST, PUT, PATCH
 
 app.post('/api/notes', (req, res) => {
-  if (req.body.content) {
+  if (!req.body.content) {
     res.status(400).json({ error: 'content is a required field' });
   } else {
     data.notes[data.nextId] = req.body;
@@ -68,7 +68,7 @@ app.put('/api/notes/:id', (req, res) => {
   const id = parseInt(req.params.id);
   if (isNaN(id) || id < 0) {
     res.status(400).json({ error: 'id must be a positive integer' });
-  } else if (req.body.content) {
+  } else if (!req.body.content) {
     res.status(400).json({ error: 'content is a required field' });
   } else if (!data.notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
