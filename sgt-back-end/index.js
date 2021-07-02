@@ -75,11 +75,12 @@ app.post('/api/grades', (req, res) => {
   } else {
     const sql = `
     insert into "grades" ("name", "course", "score")
-    values ('${req.body.name}', '${req.body.course}', '${req.body.score}')
+    values ($1, $2, $3)
     returning *
     `;
 
-    db.query(sql)
+    const params = [req.body.name, req.body.course, req.body.score];
+    db.query(sql, params)
       .then(result => {
         const newGrade = result.rows[0];
         res.status(201).json(newGrade);
@@ -102,14 +103,14 @@ app.put('/api/grades/:gradeId', (req, res) => {
   } else {
     const sql = `
       update "grades"
-      set "name" = '${req.body.name}',
-          "course" = '${req.body.course}',
-          "score" = '${req.body.score}'
+      set "name" = $2,
+          "course" = $3,
+          "score" = $4
       where "gradeId" = $1
       returning *
     `;
 
-    const params = [gradeId];
+    const params = [gradeId, req.body.name, req.body.course, req.body.score];
     db.query(sql, params)
       .then(result => {
         const updatedGrade = result.rows[0];
