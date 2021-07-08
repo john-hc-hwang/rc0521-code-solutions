@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// function component
+// function component below
 const CustomButton = () => {
   return <button>Click Me!</button>;
 };
