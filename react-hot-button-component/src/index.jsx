@@ -8,13 +8,14 @@ class HotButton extends React.Component {
 
     // This binding is necessary to make `this` work in the callback
     this.countClick = this.countClick.bind(this);
+    this.getColorClass = this.getColorClass.bind(this);
   }
 
   countClick() {
     this.setState({ clickCount: this.state.clickCount + 1 });
   }
 
-  render() {
+  getColorClass() {
     let className = 'white';
     const state = this.state.clickCount;
 
@@ -32,7 +33,11 @@ class HotButton extends React.Component {
       className = 'white';
     }
 
-    return <button className={className} onClick={this.countClick}>Hot Button</button>;
+    return className;
+  }
+
+  render() {
+    return <button className={this.getColorClass()} onClick={this.countClick}>Hot Button</button>;
   }
 }
 
