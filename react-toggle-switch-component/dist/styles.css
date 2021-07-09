@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.switch {
+  width: 6rem;
+  height: 3rem;
+  border: 3px solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.on {
+  background-color: #6aa84f;
+}
+
+.off {
+  background-color: #e2e2e2;
+}
+
+.circle {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.right {
+  bottom: 0.2rem;
+  left: 2.9rem;
+}
+
+.left {
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+
+p {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
