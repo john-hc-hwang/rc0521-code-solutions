@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 3px solid black;
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+}
+
+button:active {
+  top: 3px;
+}
+
+.purple {
+  background-color: #351c75;
+  color: white;
+}
+
+.lightPurple {
+  background-color: #674ea7;
+  color: white;
+}
+
+.pink {
+  background-color: #e06666;
+  color: white;
+}
+
+.lightOrange {
+  background-color: #f6b26b;
+}
+
+.yellow {
+  background-color: #ff0;
+}
+
+.white {
+  background-color: white;
+}
