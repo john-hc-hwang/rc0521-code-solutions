@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.watchFace {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  top: 1.6rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+i {
+  position: relative;
+  top: 5rem;
+  left: 3.2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
