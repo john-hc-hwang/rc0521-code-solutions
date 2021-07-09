@@ -10,8 +10,9 @@ class CustomButton extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // Made this method into a toggle using ! operator
   handleClick() {
-    this.setState({ isClicked: true });
+    this.setState({ isClicked: !this.state.isClicked });
   }
 
   render() {
