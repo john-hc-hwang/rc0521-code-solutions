@@ -16,6 +16,8 @@ class CustomButton extends React.Component {
 
   render() {
     return (
+    // you can also bind this by doing below
+    // <button onClick={() => this.handleClick()}>
     <button onClick={this.handleClick}>
       { this.state.isClicked ? 'Thanks!' : 'Click Me!'}
     </button>
