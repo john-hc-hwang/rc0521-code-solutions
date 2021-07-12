@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.1rem 0;
+  font-size: 1.5rem;
+}
+
+.icon {
+  position: relative;
+  top: 0.2rem;
+  left: 0.6rem;
+  font-size: 2rem;
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-green {
+  color: green;
+}
+
+p {
+  font-size: 1.5rem;
+  color: red;
+}
