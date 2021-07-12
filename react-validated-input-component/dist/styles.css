@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.1rem 0;
+  font-size: 1.5rem;
+}
+
+.far.fa-times-circle {
+  position: relative;
+  top: 0.2rem;
+  left: 0.6rem;
+  color: red;
+  font-size: 2rem;
+}
+
+.far.fa-check-circle {
+  position: relative;
+  top: 0.2rem;
+  left: 0.6rem;
+  color: green;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: red;
+}
