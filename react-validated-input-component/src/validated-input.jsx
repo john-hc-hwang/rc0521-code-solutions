@@ -22,9 +22,9 @@ class ValidatedInput extends React.Component {
 
   showIcon() {
     if (this.state.password.length < 8) {
-      return 'far fa-times-circle';
+      return 'far fa-times-circle icon icon-red';
     } else {
-      return 'far fa-check-circle';
+      return 'far fa-check-circle icon icon-green';
     }
   }
 
