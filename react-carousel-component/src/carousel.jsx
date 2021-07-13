@@ -9,6 +9,7 @@ class Carousel extends React.Component {
     this.returnImage = this.returnImage.bind(this);
   }
 
+  // returns desired image method
   returnImage() {
     const images = this.props.images;
     const imageContents = images.map(image =>
