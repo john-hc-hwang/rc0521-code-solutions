@@ -27,22 +27,23 @@ class Carousel extends React.Component {
   }
 
   changeIndex() {
-    if (this.state.index === 5) {
+    if (this.state.index === this.props.images.length) {
       this.setState({ index: 1 });
     } else {
       this.setState({ index: this.state.index + 1 });
     }
   }
 
-  changeIndexArrow(event) {
-    if (event.target.className === 'fas fa-chevron-circle-left arrow') {
+  changeIndexArrow(direction) {
+    if (direction === 'prev') {
       if (this.state.index === 1) {
-        this.setState({ index: 5 });
+        // instead of using constant number this.props.images.length for consistency
+        this.setState({ index: this.props.images.length });
       } else {
         this.setState({ index: this.state.index - 1 });
       }
     } else {
-      if (this.state.index === 5) {
+      if (this.state.index === this.props.images.length) {
         this.setState({ index: 1 });
       } else {
         this.setState({ index: this.state.index + 1 });
@@ -57,10 +58,8 @@ class Carousel extends React.Component {
     );
   }
 
-  changeIndexCircle(event) {
-    // data-id attribute is cirlce1, circle2, ... hence at index 6
-    const circleIndex = Number(event.target.dataset.id[6]);
-    this.setState({ index: circleIndex });
+  changeIndexCircle(index) {
+    this.setState({ index: index });
 
     // for smooth transition when carousel is manually changed by user
     clearInterval(this.timerId);
@@ -85,8 +84,8 @@ class Carousel extends React.Component {
     const imageContents = images.map(image =>
       <i key={ image.number.toString() } className={ this.state.index === image.number
         ? 'fas fa-circle circle'
-        : 'far fa-circle circle' } data-id={'circle' + image.number }
-        onClick={ this.changeIndexCircle }></i>
+        : 'far fa-circle circle' }
+        onClick={ () => this.changeIndexCircle(image.number) }></i>
     );
 
     return imageContents;
@@ -96,9 +95,9 @@ class Carousel extends React.Component {
     return (
     <div className="container">
       <div className="carousel">
-        <i onClick={ this.changeIndexArrow } className="fas fa-chevron-circle-left arrow"></i>
+        <i onClick={ () => this.changeIndexArrow('prev') } className="fas fa-chevron-circle-left arrow"></i>
         { this.returnImage() }
-        <i onClick={ this.changeIndexArrow } className="fas fa-chevron-circle-right arrow"></i>
+        <i onClick={ () => this.changeIndexArrow('next') } className="fas fa-chevron-circle-right arrow"></i>
       </div>
       <div className="circles">
         { this.returnCirclePos() }
