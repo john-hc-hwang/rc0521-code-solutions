@@ -27,7 +27,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
   const sql = `
   insert into "users" ("username", "hashedPassword")
   values ($1, $2)
-  returning *
+  returning "userId", "username", "createdAt"
 `;
 
   argon2
@@ -37,7 +37,6 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       db.query(sql, params)
         .then(result => {
           const [newUser] = result.rows;
-          delete newUser.hashedPassword;
           res.status(201).json(newUser);
         })
         .catch(err => next(err));
