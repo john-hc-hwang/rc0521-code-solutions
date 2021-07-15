@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  padding: 0 3rem;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: 0.2s color;
+}
+
+.arrow:hover {
+  color: rgb(9, 255, 0);
+}
+
+.circle {
+  font-size: 2rem;
+  cursor: pointer;
+}
