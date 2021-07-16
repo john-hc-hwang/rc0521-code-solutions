@@ -4,6 +4,10 @@ const express = require('express');
 const ClientError = require('./client-error'); // eslint-disable-line
 const errorMiddleware = require('./error-middleware');
 
+// With ClientError and errorMiddleware we can:
+// .catch(err => next(err));
+// throw new ClientError(400, 'errorMessage');
+
 const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
@@ -130,6 +134,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
     .catch(err => next(err));
 });
 
+// errorMiddleware must be used at the end of the file
 app.use(errorMiddleware);
 
 app.listen(process.env.PORT, () => {
