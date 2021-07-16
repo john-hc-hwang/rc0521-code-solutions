@@ -20,10 +20,13 @@ const jsonMiddleware = express.json();
 app.use(jsonMiddleware);
 
 app.post('/api/auth/sign-up', (req, res, next) => {
+  // deconstruct username and password from req.body object
   const { username, password } = req.body;
+  // if username and password is falsy, throw error
   if (!username || !password) {
     throw new ClientError(400, 'username and password are required fields');
   }
+  // use argon2 package to hash a password
   argon2
     .hash(password)
     .then(hashedPassword => {
@@ -36,6 +39,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       return db.query(sql, params);
     })
     .then(result => {
+      // deconstruct user from result.rows array (it returns an object from sql query)
       const [user] = result.rows;
       res.status(201).json(user);
     })
@@ -58,9 +62,11 @@ app.post('/api/auth/sign-in', (req, res, next) => {
   db.query(sql, params)
     .then(result => {
       const [user] = result.rows;
+      // if a user by the username is not found (undefined) throw error
       if (!user) {
         throw new ClientError(401, 'invalid login');
       } else {
+      // if a user by the username is found then verify password
         argon2
           .verify(user.hashedPassword, password)
           .then(isMatching => {
